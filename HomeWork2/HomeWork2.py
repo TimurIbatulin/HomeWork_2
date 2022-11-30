@@ -1,6 +1,12 @@
 # Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 # Пример:
 # 0,56 -> 11
+# a = input('Введите число - ')
+# sum = 0
+# for x in a:
+#     if x.isdigit():
+#         sum+=int(x)    
+# print(sum)
 
 
 # Напишите программу, которая принимает на вход число N и выдает набор произведений чисел от 1 до N.
@@ -23,8 +29,8 @@
 # n = int(input('Введите число - '))
 # z = 1
 # for x in range(n):
-#     z = (1 + 1/(x+1))**(x+1)
-#     print(f'{x+1}: {z} ')
+#     z = round((1 + 1/(x+1))**(x+1), 2)
+#     print(f'{x+1}: {z}, ', end=' ')
 
 
 
@@ -69,13 +75,13 @@
 
 
 # Реализуйте алгоритм перемешивания списка
-import random
+# import random
 
-i = int(input('Введите значение длинны списка - '))
-list = []
-for k in range(i):
-    k = input(f'Введите {k+1} значение списка - ')
-    list.append(k)
-print(list)
-random.shuffle(list)
-print(list)
+# i = int(input('Введите значение длинны списка - '))
+# list = []
+# for k in range(i):
+#     k = input(f'Введите {k+1} значение списка - ')
+#     list.append(k)
+# print(list)
+# random.shuffle(list)
+# print(list)
