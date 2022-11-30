@@ -1,12 +1,12 @@
 # Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 # Пример:
 # 0,56 -> 11
-# a = input('Введите число - ')
-# sum = 0
-# for x in a:
-#     if x.isdigit():
-#         sum+=int(x)    
-# print(sum)
+a = input('Введите число - ')
+sum = 0
+for x in a:
+    if x.isdigit():
+        sum+=int(x)    
+print(sum)
 
 
 # Напишите программу, которая принимает на вход число N и выдает набор произведений чисел от 1 до N. Пример: пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
@@ -34,30 +34,30 @@ for h in range(1,i+1):
 # Пример:
 # Для n=4 {1: 2, 2: 2.25, 3: 2.37, 4: 2.44} Сумма 9.06
 
-# n = int(input('Введите число - '))
-# z = 1
-# sum = 0
-# for x in range(n):
-#     z = round((1 + 1/(x+1))**(x+1), 2)
-#     sum += z
-#     print(f'{x+1}: {z}, ', end=' ')
-# print(f'Сумма ', sum)
+n = int(input('Введите число - '))
+z = 1
+sum = 0
+for x in range(n):
+    z = round((1 + 1/(x+1))**(x+1), 2)
+    sum += z
+    print(f'{x+1}: {z}, ', end=' ')
+print(f'Сумма ', sum)
 
 
 
 # Задайте список из N элементов, заполненных числами из промежутка [-N, N]. 
-# x = int(input('Введите число - '))
-# z = 0 - x
-# if z < x:
-#     z = z-1
-#     while z < x:
-#         z = z + 1
-#         print(f'{z}; ')
-# else:
-#     x = x - 1
-#     while x < z:
-#         x = x + 1
-#         print(f'{x}; ')
+x = int(input('Введите число - '))
+z = 0 - x
+if z < x:
+    z = z-1
+    while z < x:
+        z = z + 1
+        print(f'{z}; ')
+else:
+    x = x - 1
+    while x < z:
+        x = x + 1
+        print(f'{x}; ')
 
 
 
@@ -68,31 +68,31 @@ for h in range(1,i+1):
 # -3 * -1 * 0 = 0
 # Вывод: 0
 
-# a = int(input('Введите значение длинны списка - '))
-# c = []
-# for k in range(a):
-#     k = int(input(f'Введите {k+1} значение списка - '))
-#     c.append(k)
-# for s in range(a):
-#     print(f'{c[s]}', end=' ')
-# f = input('\n Введите значения перемножаемых позиций через пробел- ').split()
-# j = list(map(int, f))
-# # i = c[j[0]]*c[j[1]]*c[j[2]]
-# i = 1
-# for l in range(len(j)):
-#     i*= c[j[l]]
-# print(f'Произведение чисел на указанных позициях равно {i}')
+a = int(input('Введите значение длинны списка - '))
+c = []
+for k in range(a):
+    k = int(input(f'Введите {k+1} значение списка - '))
+    c.append(k)
+for s in range(a):
+    print(f'{c[s]}', end=' ')
+f = input('\n Введите значения перемножаемых позиций через пробел- ').split()
+j = list(map(int, f))
+# i = c[j[0]]*c[j[1]]*c[j[2]]
+i = 1
+for l in range(len(j)):
+    i*= c[j[l]]
+print(f'Произведение чисел на указанных позициях равно {i}')
 
 
 
 # Реализуйте алгоритм перемешивания списка
 # import random
 
-# i = int(input('Введите значение длинны списка - '))
-# list = []
-# for k in range(i):
-#     k = input(f'Введите {k+1} значение списка - ')
-#     list.append(k)
-# print(list)
-# random.shuffle(list)
-# print(list)
+i = int(input('Введите значение длинны списка - '))
+list = []
+for k in range(i):
+    k = input(f'Введите {k+1} значение списка - ')
+    list.append(k)
+print(list)
+random.shuffle(list)
+print(list)
